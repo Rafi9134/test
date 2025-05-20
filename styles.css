@@ -1,25 +1,35 @@
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
+  color: #333;
 }
-header, footer {
-  background-color: #444;
+header {
+  background-color: #6B4C3B;
   color: white;
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 nav {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   background-color: #4A8C52;
+  padding: 0.5rem 0;
 }
 nav a {
   margin: 0 1rem;
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #EDE6DB;
 }
 main {
   padding: 2rem;
@@ -32,24 +42,83 @@ main {
   margin-bottom: 1rem;
   border-radius: 8px;
   background: white;
+  transition: box-shadow 0.3s;
+}
+.product:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .product img {
   max-width: 100%;
   border-radius: 8px;
   margin-bottom: 0.5rem;
 }
-.buy-button {
-  margin-top: 0.5rem;
+.buy-button input[type="submit"] {
+  background-color: #4A8C52;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.buy-button input[type="submit"]:hover {
+  background-color: #3a6a3b;
+}
+.footer {
+  background-color: #444;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.footer a {
+  color: #EDE6DB;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #4A8C52;
 }
 .email-capture {
   background: #EDE6DB;
   padding: 1rem;
   text-align: center;
   margin-top: 2rem;
+  border-radius: 8px;
 }
-@media (max-width: 600px) {
-  nav a {
-    display: block;
-    margin: 0.5rem 0;
-  }
+input[type="email"] {
+  padding: 0.5rem;
+  width: 60%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+input[type="submit"] {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #6B4C3B;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+  background-color: #543a2f;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #4A8C52;
+}
+a.button {
+  display: inline-block;
+  background-color: #4A8C52;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+a.button:hover {
+  background-color: #3a6a3b;
 }
