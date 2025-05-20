@@ -37,6 +37,22 @@ nav a:hover {
   color: #EDE6DB;
 }
 
+/* Language Switcher */
+.lang-switcher {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.lang-switcher a {
+  color: white;
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.lang-switcher a:hover {
+  color: #EDE6DB;
+}
+
 /* Hero */
 .hero {
   background: url('https://via.placeholder.com/1600x600?text=Roots+%26+Rise+Products') center/cover no-repeat;
@@ -123,25 +139,6 @@ main {
   background-color: #3a6a3b;
 }
 
-/* Footer */
-.footer {
-  background-color: #444;
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-.footer a {
-  color: #EDE6DB;
-  margin: 0 0.5rem;
-  transition: color 0.3s;
-}
-.footer a:hover {
-  color: #4A8C52;
-}
-.footer p {
-  margin: 0.5rem 0;
-}
-
 /* Email Capture */
 .email-capture {
   background: #EDE6DB;
@@ -169,4 +166,38 @@ main {
 }
 .email-capture input[type="submit"]:hover {
   background-color: #543a2f;
+}
+
+/* Footer */
+.footer {
+  background-color: #444;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.footer a {
+  color: #EDE6DB;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #4A8C52;
+}
+.footer p {
+  margin: 0.5rem 0;
+}
+
+/* RTL support */
+html[dir="rtl"] {
+  direction: rtl;
+}
+html[dir="rtl"] header, html[dir="rtl"] footer {
+  text-align: right;
+}
+html[dir="rtl"] nav a {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+html[dir="rtl"] .product-content .button {
+  align-self: flex-end;
 }
