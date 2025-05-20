@@ -1,24 +1,58 @@
 
 body {
   font-family: 'Vazirmatn', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
   margin: 0;
   padding: 0;
+  background: #fff;
+  color: #333;
 }
-header {
-  background-color: #d0c7e8;
-  padding: 20px;
+
+.header {
+  background: #f8f8f8;
+  padding: 1em;
   text-align: center;
+  border-bottom: 1px solid #ddd;
 }
-nav a {
+
+.menu a {
   margin: 0 10px;
   text-decoration: none;
-  color: #444;
+  color: #555;
 }
-footer {
-  background-color: #eee;
+
+.hero {
+  background: #ffece6;
+  padding: 2em;
   text-align: center;
-  padding: 10px;
-  font-size: 0.9em;
+}
+
+.products {
+  padding: 2em;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+}
+
+.product {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 1em;
+  background: #eee;
+  margin-top: 2em;
 }
